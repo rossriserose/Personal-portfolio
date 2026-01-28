@@ -1,0 +1,52 @@
+/* Simple glowing dot cursor */
+.custom-cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 6px var(--primary),
+    0 0 12px var(--primary-light);
+}
+
+/* Heart beating effect on hover - gentle and bigger scale */
+.custom-cursor.hovering {
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  15% {
+    transform: translate(-50%, -50%) scale(1.8);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1.6);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Dark theme - golden glow */
+[data-theme="dark"] .custom-cursor {
+  background: #ffc832;
+  box-shadow:
+    0 0 10px #ffc832,
+    0 0 20px #ffb64d;
+}
+
+/* Hide on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}

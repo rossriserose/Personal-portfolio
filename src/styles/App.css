@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 52px;
+  padding-bottom: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+
+.main-column {
+  width: 100%;
+  max-width: 850px;
+}

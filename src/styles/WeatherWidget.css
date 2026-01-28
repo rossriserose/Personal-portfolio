@@ -1,0 +1,236 @@
+/* Weather Widget - Sidebar Style */
+.weather-widget {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  width: 220px;
+  background: var(--card-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  overflow: hidden;
+}
+
+/* Loading State */
+.weather-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 12px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.weather-loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error State */
+.weather-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.weather-error svg {
+  color: var(--text-muted);
+}
+
+/* Current Weather */
+.weather-current {
+  padding: 16px;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.weather-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.weather-location svg {
+  color: var(--primary);
+}
+
+.weather-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.weather-icon-large {
+  width: 64px;
+  height: 64px;
+  margin: -8px;
+}
+
+.weather-temp-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.weather-temp {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.weather-unit {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.weather-description {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+  margin: 0 0 16px;
+}
+
+/* Weather Details */
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.weather-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.weather-detail-item svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.detail-label {
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Forecast Section */
+.weather-forecast {
+  padding: 12px 16px;
+  background: var(--bg-tertiary);
+  border-top: 1px solid var(--border-color);
+}
+
+.forecast-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px;
+}
+
+.forecast-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.forecast-day {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.forecast-icon {
+  width: 32px;
+  height: 32px;
+  margin: -4px 0;
+}
+
+.forecast-temp {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Attribution */
+.weather-attribution {
+  padding: 8px 16px;
+  text-align: center;
+  font-size: 9px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Responsive - Hide on smaller screens */
+@media (max-width: 1400px) {
+  .weather-widget {
+    right: 12px;
+    width: 200px;
+  }
+
+  .weather-temp {
+    font-size: 40px;
+  }
+
+  .weather-icon-large {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .weather-widget {
+    display: none;
+  }
+}

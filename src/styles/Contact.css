@@ -1,0 +1,75 @@
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.contact-item:hover {
+  background-color: var(--bg-tertiary);
+  text-decoration: none;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-tertiary);
+  border-radius: 50%;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.contact-value {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Mini Google Map */
+.contact-map {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.contact-map iframe {
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.contact-map:hover iframe {
+  filter: grayscale(0%);
+}
+
+/* Dark theme map filter */
+[data-theme="dark"] .contact-map iframe {
+  filter: grayscale(20%) invert(90%) hue-rotate(180deg);
+}
+
+[data-theme="dark"] .contact-map:hover iframe {
+  filter: invert(90%) hue-rotate(180deg);
+}

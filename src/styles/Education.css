@@ -1,0 +1,74 @@
+.education-item {
+  display: flex;
+  gap: 12px;
+}
+
+.education-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-tertiary);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.education-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.education-school {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.education-degree {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin: 0 0 2px 0;
+}
+
+.education-period {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 0 0 8px 0;
+}
+
+.education-description {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.languages-section {
+  border-top: 1px solid var(--border-color);
+}
+
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.language-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.language-level {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
