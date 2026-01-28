@@ -26,9 +26,9 @@ const experiences = [
     company: 'ETIXIO Digital Lab',
     companyUrl: 'https://https://www.etixio.com/',
     location: 'Meudon, France',
-    type: 'Remote',
+    type: '',
     period: '04/2020 - 11/2022',
-    duration: '1 yr 5 mos',
+    duration: '',
     responsibilities: [
       'Built and maintained full-cycle web applications using Node.js, TypeScript, React, and Vue.js with RESTful APIs and real-time features via Socket.io',
       'Designed and consumed RESTful APIs, integrated third-party services, and implemented secure authentication flows using JWT and encrypted sessions',
@@ -36,7 +36,7 @@ const experiences = [
       'Introduced modular architectures and reusable components, improving maintainability and delivery speed',
       'Participated in agile development cycles, translating business requirements into scalable technical solutions'
     ],
-    skills: ['XRP Ledger', 'XUMM', 'WalletConnect', 'Matrix', 'Synapse', 'AdonisJS', 'TypeScript', 'Node.js', 'Next.js', 'React', 'Socket.io', 'Twilio', 'MySQL', 'PostgreSQL', 'Redis', 'Docker', 'AWS EC2', 'Tailwind CSS', 'Radix UI'],
+    skills: [],
     logoImage: '/image/company/etixio_logo.JPG',
   },
   {
@@ -44,15 +44,15 @@ const experiences = [
     company: 'SITE IT NOW',
     companyUrl: 'https://https://www.siteitnow.com/',
     location: 'Chicago, IL, USA',
-    type: 'Remote',
+    type: '',
     period: '02/2018 - 12/2019',
-    duration: '2 yrs 6 mos',
+    duration: '',
     responsibilities: [
       'Developed responsive, high-performance frontend applications with React and Vue.js, ensuring cross-browser compatibility and accessibility',
       'Collaborated with backend teams to integrate APIs and optimize end-user workflows',
       'Delivered reusable UI components and improved frontend performance across multiple client projects',
     ],
-    skills: ['Vue.js', 'Vue 2', 'Vue 3', 'Vuex', 'Pinia', 'BootstrapVue', 'PrimeVue', 'Node.js', 'Express', 'MySQL', 'Sequelize', 'AWS', 'EC2', 'RDS', 'S3', 'CloudFront', 'Cognito', 'Lambda', 'API Gateway', 'Docker', 'Stable Diffusion', 'Go', 'ElasticSearch', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    skills: [],
     logoImage: '/image/company/siteitnow.JPG',
   },
 ];
